@@ -1,0 +1,23 @@
+{
+	"apps" : [{
+		// Application #1
+		"name"        : "Things",
+		"script"      : "./bin/www",
+		"watch"       : false,
+		"merge_logs"  : true,
+		"log_date_format"  : "YYYY-MM-DD HH:mm Z",
+        "out_file": "./pm2_out.log",
+        "error_file": "./pm2_err.log",
+		"instances": 1,
+		"exec_mode": "cluster",
+		"cron_restart": "1 0 * * *",
+		"max_restarts": 5,
+		"max_memory_restart": "256M",
+		"env": {
+            "NODE_PATH": "$NODE_PATH:.",
+            "DEBUG": "view:*",
+            "NODE_ENV": "deploy"
+		}
+	}]
+}
+
