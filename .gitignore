@@ -4,6 +4,8 @@ node_modules/*
 
 .project/*
 
+scripts/*
+
 pm2_err.log
 
 pm2_out.log

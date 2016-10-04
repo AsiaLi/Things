@@ -15,7 +15,7 @@
 		"max_memory_restart": "256M",
 		"env": {
             "NODE_PATH": "$NODE_PATH:.",
-            "DEBUG": "view:*",
+            "DEBUG": "view:*, service:*",
             "NODE_ENV": "deploy"
 		}
 	}]
